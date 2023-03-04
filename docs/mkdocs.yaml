@@ -1,0 +1,50 @@
+site_name: Wiki
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: black
+      accent: deep orange
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: deep orange
+      toggle:
+        icon: material/lightbulb-outline
+        name: Switch to dark mode
+  features:
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+  icon:
+    repo: fontawesome/brands/github-alt
+  # logo: favicon.svg
+  # favicon: favicon.svg
+repo_name: armand-sauzay/wiki
+repo_url: https://github.com/armand-sauzay/wiki
+nav:
+  - Wiki: index.md
+  - Commands:
+      - commands/index.md
+      - commands/bang-bang.md
+  - Workflows:
+      - workflows/index.md
+      - workflows/interactive-rebase.md
+extra:
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/armand-sauzay
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/armandsauzay
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/armand-sauzay
+    - icon: fontawesome/brands/dev
+      link: https://dev.to/armandsauzay
+    - icon: fontawesome/brands/medium
+      link: https://medium.com/@armand-sauzay
+    - icon: fontawesome/solid/globe
+      link: https://armand-sauzay.github.io/

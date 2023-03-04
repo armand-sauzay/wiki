@@ -1,0 +1,49 @@
+name: Release
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  lint:
+    name: Lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: pre-commit/action@v3.0.0
+
+  release:
+    name: Semantic Release
+    needs: [lint]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Semantic release
+        id: release
+        uses: cycjimmy/semantic-release-action@v3
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Update major branch
+        if: steps.release.outputs.new_release_published == 'true'
+        shell: bash
+        run: |
+          echo "Updating branch: v${{ steps.release.outputs.new_release_major_version }}"
+          git branch -f v${{ steps.release.outputs.new_release_major_version }}
+          git push -f origin v${{ steps.release.outputs.new_release_major_version }}
+
+  publish-docs:
+    name: Publish docs
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: 3.x
+      - uses: actions/cache@v2
+        with:
+          key: ${{ github.ref }}
+          path: .cache
+      - run: |
+          pip install mkdocs-material
+      - run: mkdocs gh-deploy --config-file docs/mkdocs.yaml --force
