@@ -1,19 +1,30 @@
 <p align="center">
-  <a href="https://armand-sauzay.github.io/wiki/"><img src="docs/docs/assets/wiki.svg" alt="Actions Python" width="600" height="300"></a>
+  <a href="https://armand-sauzay.github.io/wiki/"><img src="assets/wiki.svg" alt="Actions Python" width="600" height="300"></a>
 </p>
 
-Code wikis and CS treats.
+<p align="center">
+  Code wikis and CS treats.
+</p>
 
-## Documentation
+---
 
-Find the documentation at [armand-sauzay.github.io/wiki](https://armand-sauzay.github.io/wiki/).
+Source: [github.com/armand-sauzay/wiki](https://github.com/armand-sauzay/wiki/)
 
-## Local setup
+Documentation: [armand-sauzay.github.io/wiki](https://armand-sauzay.github.io/wiki/)
 
-- install [poetry](https://python-poetry.org/docs/#installation)
-- clone the repo
-- run `poetry install`
-- run `./script/server`
+---
+
+## Commands
+
+See [commands](commands/index.md) for a list of commands.
+
+## Workflows
+
+See [workflows](workflows/index.md) for a list of workflows.
+
+## Tools
+
+See [tools](tools/index.md) for a list of tools.
 
 ## Contributing
 

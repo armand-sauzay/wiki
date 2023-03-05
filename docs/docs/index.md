@@ -21,3 +21,11 @@ See [commands](commands/index.md) for a list of commands.
 ## Workflows
 
 See [workflows](workflows/index.md) for a list of workflows.
+
+## Tools
+
+See [tools](tools/index.md) for a list of tools.
+
+## Contributing
+
+PRs and issues are welcome.
