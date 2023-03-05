@@ -19,11 +19,13 @@ theme:
   features:
     - search.suggest
     - search.highlight
-    - content.tabs.link
+    - navigation.tabs
+  favicon: assets/w-blue.svg
+  logo: assets/w-blue.svg
   icon:
     repo: fontawesome/brands/github-alt
-  # logo: favicon.svg
-  # favicon: favicon.svg
+  custom_dir: overrides
+
 repo_name: armand-sauzay/wiki
 repo_url: https://github.com/armand-sauzay/wiki
 nav:
@@ -34,6 +36,8 @@ nav:
   - Workflows:
       - workflows/index.md
       - workflows/interactive-rebase.md
+  - Tools:
+      - tools/index.md
 extra:
   social:
     - icon: fontawesome/brands/github-alt
@@ -48,3 +52,6 @@ extra:
       link: https://medium.com/@armand-sauzay
     - icon: fontawesome/solid/globe
       link: https://armand-sauzay.github.io/
+  analytics:
+    provider: Google
+    propetry: G-JJWRNMYPFH
