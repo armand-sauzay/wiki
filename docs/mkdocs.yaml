@@ -53,5 +53,5 @@ extra:
     - icon: fontawesome/solid/globe
       link: https://armand-sauzay.github.io/
   analytics:
-    provider: Google
+    provider: google
     propetry: G-JJWRNMYPFH
