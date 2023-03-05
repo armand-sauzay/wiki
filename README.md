@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://armand-sauzay.github.io/wiki/"><img src="assets/wiki.svg" alt="Wiki" width="600" height="300"></a>
+  <a href="https://armand-sauzay.github.io/wiki/"><img src="docs/docs/assets/wiki.svg" alt="Wiki" width="600" height="300"></a>
 </p>
 
 <p align="center">
