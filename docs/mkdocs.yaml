@@ -20,19 +20,37 @@ theme:
     - search.suggest
     - search.highlight
     - navigation.tabs
+    - navigation.path
   favicon: assets/w-blue.svg
   logo: assets/w-blue.svg
   icon:
     repo: fontawesome/brands/github-alt
   custom_dir: overrides
-
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
 repo_name: armand-sauzay/wiki
 repo_url: https://github.com/armand-sauzay/wiki
 nav:
   - Wiki: index.md
   - Commands:
-      - commands/index.md
-      - commands/bang-bang.md
+      - Table of contents: commands/index.md
+      - Bash:
+          - commands/bash/index.md
+          - commands/bash/awk.md
+          - commands/bash/bang-bang.md
+          - commands/bash/cat.md
+          - commands/bash/chmod.md
+          - commands/bash/curl.md
+          - commands/bash/pipe.md
+          - commands/bash/sed.md
+          - commands/bash/std.md
+          - commands/bash/xargs.md
   - Workflows:
       - workflows/index.md
       - workflows/interactive-rebase.md
@@ -55,3 +73,18 @@ extra:
   analytics:
     provider: google
     property: G-JJWRNMYPFH
+    feedback:
+      title: Was this page helpful?
+      ratings:
+        - icon: material/emoticon-happy-outline
+          name: This page was helpful
+          data: 1
+          note: >-
+            Thanks for your feedback!
+            Help us improve this page <a href="https://docs.google.com/forms/d/e/1FAIpQLSdq-1iiqF_ElLmqd7KE7T-g4MkpPT7xCH85DlXxz40hKMkVrA/viewform" target="_blank" rel="noopener">telling us what we're missing</a>.
+        - icon: material/emoticon-sad-outline
+          name: This page could be improved
+          data: 0
+          note: >-
+            Thanks for your feedback! Help us improve this page by
+            using our <a href="https://docs.google.com/forms/d/e/1FAIpQLSdq-1iiqF_ElLmqd7KE7T-g4MkpPT7xCH85DlXxz40hKMkVrA/viewform" target="_blank" rel="noopener">feedback form</a>.
