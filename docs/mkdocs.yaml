@@ -51,6 +51,12 @@ nav:
           - commands/bash/sed.md
           - commands/bash/std.md
           - commands/bash/xargs.md
+      - Python:
+          - commands/python/index.md
+          - commands/python/dis.md
+          - commands/python/gc.md
+          - commands/python/inspect.md
+          - commands/python/venv.md
   - Workflows:
       - workflows/index.md
       - workflows/interactive-rebase.md
