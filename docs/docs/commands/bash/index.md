@@ -40,7 +40,7 @@ Note: all the documentation for now is done for MacOS. Linux/Windows could be a
 little different (feel free to open a PR). But, in a terminal session, you can
 type `man <command>` to get the manual for the command.
 
-See below for a list of commands:
+## Table of Content
 
 - [awk](awk.md)
 - [bang bang](bang-bang.md)
